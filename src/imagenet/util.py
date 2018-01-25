@@ -60,7 +60,7 @@ def save_to_tfrecords_sparse(filename, save_path):
     save dataset to tfrecord, with format (index, value, label)
 
     parameters:
-    filename - input dataset, in the format of .vw.gz
+    filename - input dataset, in the format of .vw
     save_path - the path you save tfrecords to
     """
     _float_feature = lambda v: tf.train.Feature(float_list=tf.train.FloatList(value=v))
